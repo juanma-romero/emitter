@@ -1,0 +1,15 @@
+.carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.2)}.page-footer,.top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+
+#container-controler{
+  
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(122,122,124,1) 37%, rgba(255,255,255,1) 100%);
+  }
+ 
+
+
+.brand {
+    
+    max-height: 80px;
+    margin: 10px;
+}
