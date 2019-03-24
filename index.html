@@ -84,7 +84,16 @@
         </ul>
 
         <!-- Right -->
-       
+        <div class="dropdown">
+            <button class="btn btn-blue-grey btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Française</a>
+              
+              
+            </div>
+          </div>
 
 
       </div>
@@ -313,12 +322,21 @@
               </p>
 
             <!-- CTA -->
-            <a target="_blank" href="" class="btn btn-grey btn-md">Download Brochures
+          
+            <a href="brochu.pdf" class="btn btn-grey btn-md" download>Download Brochures
               <i class="fas fa-download ml-1"></i>
             </a>
-            <a target="_blank" href="" class="btn btn-grey btn-md">View Specifications
+          
+
+            <a id="viewSpecif" class="btn btn-grey btn-md">View Specifications
               <i class="fas fa-list ml-1"></i>
             </a>
+            <img id="image" class="hidden" src="img/specif.jpg" />
+
+            
+                
+             
+
 
           </div>
           <!--Grid column-->
@@ -725,6 +743,8 @@
                 <input type="text" id="defaultFormDetail" class="form-control validate">
                 <label data-error="wrong" data-success="right" for="defaultFormDetail">Detail of your Project</label>
               </div>
+              
+            
   
         </div>
         <div class="modal-footer d-flex justify-content-center">
@@ -745,19 +765,21 @@
       
       
       
-      <img src="brands/bucknerSuperior.png" class="img-fluid brand" alt="Responsive image">
-      <img src="brands/galcon.png" class="img-fluid brand" alt="Responsive image">
-      <img src="brands/irritrol.png" class="img-fluid brand" alt="Responsive image">
+      
+      
     </div>
       <div class="row">
-      
+          <img src="brands/bucknerSuperior.png" class="img-fluid brand" alt="Responsive image">
+          <img src="brands/galcon.png" class="img-fluid brand" alt="Responsive image">
       <img src="brands/krain.jpg" class="img-fluid brand" alt="Responsive image">
       <img src="brands/bermad.png" class="img-fluid brand" alt="Responsive image">
+      <img src="brands/toro.png" class="img-fluid brand" alt="Responsive image">
       <img src="brands/rainBird.png" class="img-fluid brand" alt="Responsive image">
       
-      <img src="brands/toro.png" class="img-fluid brand" alt="Responsive image">
+      
     </div>
     <div class="row">
+        <img src="brands/irritrol.png" class="img-fluid brand" alt="Responsive image">
         <img src="brands/Weathermatic.png" class="img-fluid brand" alt="Responsive image">
         <img src="brands/signature.jpg" class="img-fluid brand" alt="Responsive image">
         <img src="brands/hunter.png" class="img-fluid brand" alt="Responsive image">
@@ -910,6 +932,11 @@
         detect_active();
       });
     });
+    function toggleImage() {
+      $('#image').toggleClass('hidden');
+    }
+    
+    $('#button').click(toggleImage);
   </script>
 </body>
 
