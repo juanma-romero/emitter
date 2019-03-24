@@ -328,7 +328,7 @@
             </a>
           
 
-            <a id="viewSpecif" class="btn btn-grey btn-md">View Specifications
+            <a id="button" class="btn btn-grey btn-md">View Specifications
               <i class="fas fa-list ml-1"></i>
             </a>
             <img id="image" class="hidden" src="img/specif.jpg" />
@@ -931,12 +931,13 @@
     
         detect_active();
       });
+      function toggleImage() {
+        $('#image').toggleClass('hidden');
+      }
+      
+      $('#button').click(toggleImage);
     });
-    function toggleImage() {
-      $('#image').toggleClass('hidden');
-    }
     
-    $('#button').click(toggleImage);
   </script>
 </body>
 
